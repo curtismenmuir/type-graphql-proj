@@ -5,5 +5,10 @@ node_modules
 npm-debug.log
 yarn-error.log
 
+# VS Code dir
+#
 .vscode/
 
+# Build output dir
+#
+dist/
