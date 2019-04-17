@@ -1,0 +1,14 @@
+version: "3.4"
+services:
+  type-graphql-proj:
+    build: 
+      context: .
+    ports: 
+      - 4000:4000
+    volumes:
+      - type: bind
+        source: $PWD
+        target: /usr/app
+    environment: 
+      - PORT=4000
+    restart: on-failure

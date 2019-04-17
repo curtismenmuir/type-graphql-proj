@@ -19,6 +19,14 @@ IMPORTANT:
 - This is done by executing the following command in the projects root dir:
   `npm run build:dev`
 
+## Docker & Docker-Compose
+
+- docker build . -t curtismenmuir/type-graphql-proj
+
+- docker run -p 4000:4000 curtismenmuir/type-graphql-proj:latest
+
+- docker-compose up --force-recreate --always-recreateeps --build --remove-orphans
+
 ## Queries
 
 Users:

@@ -1,7 +1,8 @@
 {
   "name": "type-graphql-proj",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Project to test using the Type-GraphQL framework from creating a TypeScript GraphQL server implementation",
   "main": "index.ts",
   "scripts": {
     "start": "npm run-script build && node 'dist/index.js'",
@@ -10,10 +11,14 @@
     "build:dev": "nodemon 'index.ts' --exec 'ts-node' index.ts -e ts,graphql"
   },
   "keywords": [
-    "Type-GraphQL"
+    "Type-GraphQL",
+    "TypeScript",
+    "JavaScript",
+    "Apollo-Server",
+    "GraphQL"
   ],
   "author": "Curtis Menmuir",
-  "license": "",
+  "license": "MIT",
   "dependencies": {
     "@types/graphql": "^14.2.0",
     "apollo-server": "^2.4.8",
