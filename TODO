@@ -2,5 +2,3 @@
 Todo:
   ☐ JWT.verify race condition - use async await
   ☐ Contract driven testing => "pacts"
-  ☐ UT
-  ☐ Docker

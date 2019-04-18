@@ -8,7 +8,8 @@
     "start": "npm run-script build && node 'dist/index.js'",
     "build": "rm -rf ./dist && mkdir dist && tsc -p . && cp secrets.json dist",
     "start:dev": "npm run build:dev",
-    "build:dev": "nodemon 'index.ts' --exec 'ts-node' index.ts -e ts,graphql"
+    "build:dev": "nodemon 'index.ts' --exec 'ts-node' index.ts -e ts",
+    "test": "jest --config ./jest.config.js"
   },
   "keywords": [
     "Type-GraphQL",
@@ -21,12 +22,23 @@
   "license": "MIT",
   "dependencies": {
     "@types/graphql": "^14.2.0",
+    "@types/jest": "^24.0.11",
     "apollo-server": "^2.4.8",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.7.1",
+    "babel-preset-env": "^1.7.0",
     "class-transformer": "^0.2.0",
     "graphql": "^14.2.1",
+    "graphql-import": "^0.7.1",
+    "graphql-tools": "^4.0.4",
+    "jest": "^24.7.1",
+    "jest-cli": "^24.7.1",
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^1.18.11",
     "reflect-metadata": "^0.1.13",
+    "regenerator-runtime": "^0.13.2",
+    "ts-jest": "^24.0.2",
     "ts-node": "^8.0.3",
     "type-graphql": "^0.17.1",
     "typescript": "^3.4.3"

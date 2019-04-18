@@ -12,3 +12,7 @@ yarn-error.log
 # Build output dir
 #
 dist/
+
+# Jest Test Coverage
+#
+coverage/

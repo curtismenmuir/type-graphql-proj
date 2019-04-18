@@ -11,8 +11,8 @@ async function bootstrap() {
   // build TypeGraphQL executable schema
   const schema = await buildSchema({
     resolvers: [RecipeResolver, UserResolver],
-    // automatically create `schema.gql` file with schema definition in current folder
-    emitSchemaFile: path.resolve(__dirname, "schema.gql"),
+    // automatically create `schema.graphql` file with schema definition in current folder
+    emitSchemaFile: path.resolve(__dirname, "schema.graphql"),
     // JWT authentication function
     authChecker: customAuthChecker
   });

@@ -15,7 +15,7 @@ Project built from root dir with the following command:
 
 IMPORTANT:
 
-- schema.gql must be updated before building the project.
+- schema.graphql must be updated before building the project.
 - This is done by executing the following command in the projects root dir:
   `npm run build:dev`
 
