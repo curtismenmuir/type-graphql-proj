@@ -9,7 +9,7 @@
     "build": "rm -rf ./dist && mkdir dist && tsc -p . && cp secrets.json dist",
     "start:dev": "npm run build:dev",
     "build:dev": "nodemon 'index.ts' --exec 'ts-node' index.ts -e ts",
-    "test": "jest --config ./jest.config.js"
+    "test": "nodemon --exec 'jest --config ./jest.config.js' -e ts"
   },
   "keywords": [
     "Type-GraphQL",

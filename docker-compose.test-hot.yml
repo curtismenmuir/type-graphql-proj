@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  type-graphql-proj:
+    build: 
+      context: .
+    command: test
+    environment: 
+      - PORT=4000
+    volumes:
+      - type: bind
+        source: $PWD
+        target: /usr/app

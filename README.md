@@ -19,13 +19,22 @@ IMPORTANT:
 - This is done by executing the following command in the projects root dir:
   `npm run build:dev`
 
+## Tests
+
+Tests can be run from root dir with the following command:
+`npm test`
+
 ## Docker & Docker-Compose
 
 - docker build . -t curtismenmuir/type-graphql-proj
 
 - docker run -p 4000:4000 curtismenmuir/type-graphql-proj:latest
 
-- docker-compose up --force-recreate --always-recreateeps --build --remove-orphans
+- docker-compose up --force-recreate --always-recreate-deps --build --remove-orphans
+
+## Docker-Compose tests
+
+- docker-compose -f docker-compose.test-hot.yml up --force-recreate --always-recreate-deps --build --remove-orphans
 
 ## Queries
 
